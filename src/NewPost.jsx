@@ -49,7 +49,7 @@ function NewPost() {
           <input type="text" value={author} onChange={(e) => setAuthor(e.target.value)} />
         </div>
         <div>
-          <label>Comentario:</label>
+          <label>Contenido:</label>
           <textarea value={content} onChange={(e) => setContent(e.target.value)} />
         </div>
         <button type="submit">Guardar</button>

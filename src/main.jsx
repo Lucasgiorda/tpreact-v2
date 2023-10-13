@@ -9,6 +9,7 @@ import {
   Routes, 
   Route 
 } from 'react-router-dom';
+import Admin from './Admin'
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(
@@ -26,6 +27,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         {/*los : son un parametro que este es tomado por useparams en post
         tambien no tiene exact por que es una url dinamica osea que depende de una variable */}
         <Route path="/post/:postId" element={<PostDetail />} /> {/* Ruta dinámica con parámetro postId */}
+        <Route exact path='/admin' element={<Admin />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>,
