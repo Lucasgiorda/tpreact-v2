@@ -1,7 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import NewPost from './NewPost'
-import './index.css'
+import './index1.css'
 import Home from './Home.jsx'
 import PostDetail from './Post';
 import { 

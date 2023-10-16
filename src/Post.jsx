@@ -42,28 +42,28 @@ function PostDetail() {
   }
   return (
     <>
-    <div>
+    <div className='PostDetails1'>
       {/* carga el post con la iformacion del useEffect*/}
-      <h2>Detalles del Post</h2>
-      <h3>{post.title}</h3>
-      <p>Autor: {post.author}</p>
-      <ReactMarkdown>{post.content}</ReactMarkdown>
+      <h2 className='PostDetailsTittle'>Detalles del Post</h2>
+      <h3 className='PostDetailsPostTittle'>{post.title}</h3>
+      <p className='PostDetailsAuthor'><b>Autor: {post.author}</b></p>
+      <ReactMarkdown className='PostDetailsContent'>{post.content}</ReactMarkdown>
     </div>
-    <div>
+    <div className='Comentarios'>
       <h3>Comentaros</h3>
-      <form action="" onSubmit={comento}>
-        <input type="text" value={comen_Nombre} onChange={(e)=>setCN(e.target.value)} />
-        <input type="text" value={comen_P} onChange={(e)=>setCP(e.target.value)} />
-        <input type="submit" />
+      <form action="" className='formcomen'onSubmit={comento}>
+        <input type="text" className='Form4'value={comen_Nombre} placeholder='Nombre' onChange={(e)=>setCN(e.target.value)} />
+        <input type="text" className='Form4'value={comen_P} placeholder='Comentario'onChange={(e)=>setCP(e.target.value)} />
+        <input className='NewPost' type="submit" />
       </form>
       <ul>
         {/* map que carga los comentarios modo lista */}
         {comenN.map((c, i) => (<div key={i}>
-          <h3 >-{c.nombre} dice:</h3>
+          <h3 >{c.nombre} dice:</h3>
           <p>{c.comentario}</p>
           </div>
         ))}
-        <Link to="/">Volver al Inicio</Link>
+        <Link className='NewPost' to="/">Volver al Inicio</Link>
       </ul>
     </div>
     </>

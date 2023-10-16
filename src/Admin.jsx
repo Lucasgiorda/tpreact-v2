@@ -28,15 +28,16 @@ export default function Admin(){
         console.log(admin);
     }
     return(
-        <> 
+        <div className="admin"> 
         <form action="" onSubmit={iniciar}>
+            <h3>ingresar contraseña para admin</h3>
             <input type="text" placeholder="nombre"/>
             <input type="text" placeholder="contraseña" value={contraseña} onChange={(e)=>setContraseña(e.target.value)}/>
-            <button>iniciar sesion</button>
+            <button className="NewPost">iniciar sesion</button>
         </form>
-        <button onClick={cerrar}>cerrar sesion</button>
-        <Link to="/">volver</Link>
+        <button className="NewPost" onClick={cerrar}>cerrar sesion</button>
+        <Link className="NewPost" to="/">volver</Link>
         {admin && <h1>sos admin capo</h1> } 
-        </>
+        </div>
     )
 }

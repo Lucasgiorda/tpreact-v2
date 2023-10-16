@@ -25,23 +25,26 @@ function Home() {
   }
   const [postss,setPost] = useState([]);
   return (
-    <div>
-      <h2>Lista de Posts</h2>
-      {<Link to="/new-post">Nuevo Post</Link>}
+    <div className='MainDiv'>
+      <div className='head'>
+      <h2 className='ListaPost'>Lista de Posts</h2>
+      {<Link to="/new-post" className='NewPost'>Nuevo Post</Link>}
+      </div>
       <ul>
         {/*un map que crea cada post usando la info en post*/}
         {postss.map((post) => (
-          <div key={post.id}>
+          <div className='Post1' key={post.id}>
           <li >
-            <h3>{post.title}</h3>
-            <p>Autor: {post.author}</p>
-           <ReactMarkdown>{post.content}</ReactMarkdown>
+          <h3 className='TituloPost'>{post.title}</h3>
+            <p className='AutorPost'>Autor: {post.author}</p>
+           
+           <ReactMarkdown className='ContenidoPost'>{post.content}</ReactMarkdown>
             {/*link individual de cada pagina 
             usa ruta post y usa el id del post
             para la ruta y este valor mas tarde en post es tomado por useParam*/}
-            <Link to={`/post/${post.id}`}>Ver Detalles</Link>
+            <Link to={`/post/${post.id}`} className='DetailsPost'>Ver Detalles</Link>
           </li>
-          {admin && <button value={post.id} onClick={borrar}>borrar</button> }
+          {admin && <button value={post.id}  onClick={borrar}>borrar</button> }
           </div>
         ))}
       </ul>

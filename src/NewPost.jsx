@@ -37,24 +37,21 @@ function NewPost() {
   };
 
   return (
-    <div>
-      <h2>Nuevo Post</h2>
-      <form onSubmit={handleSubmit}>
-        <div>
-          <label>Título:</label>
-          <input type="text" value={title} onChange={(e) => setTitle(e.target.value)} />
+    <div className='NewPostMain'>
+      <h2 className='NewPostTittle'>Nuevo Post</h2>
+      <form className='FormPost' onSubmit={handleSubmit}>
+        <div className='Form1'>
+          <input className='Form2' placeholder='Titulo' type="text" value={title} onChange={(e) => setTitle(e.target.value)} />
         </div>
-        <div>
-          <label>Autor:</label>
-          <input type="text" value={author} onChange={(e) => setAuthor(e.target.value)} />
+        <div className='Form1'>
+          <input className='Form2' placeholder='Autor' type="text" value={author} onChange={(e) => setAuthor(e.target.value)} />
         </div>
-        <div>
-          <label>Contenido:</label>
-          <textarea value={content} onChange={(e) => setContent(e.target.value)} />
+        <div className='Form1'>
+          <textarea className='Form3' placeholder='Comentario' value={content} onChange={(e) => setContent(e.target.value)} />
         </div>
-        <button type="submit">Guardar</button>
+        <button className='SavePostButton' type="submit">Guardar</button>
       </form>
-      <Link to="/">Volver al Inicio</Link>
+      <Link className='BackHomeButton' to="/">Volver al Inicio</Link>
     </div>
   );
 }
