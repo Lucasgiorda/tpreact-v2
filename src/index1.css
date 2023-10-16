@@ -132,12 +132,12 @@ background-repeat: no-repeat;
 .SavePostButton {
     border-radius: 7px;
     margin-top: 20px;
-    background-color: rgb(129, 129, 129);
+    background-color: #ff847c;
     color: white;
 }
 .SavePostButton:hover {
     border-radius: 5px;
-    color: rgb(225, 225, 225);
+    color: #ff847c;
     transform: transition;
     transition: all 0.5s;
     box-shadow: 0px 20px 25px -10px rgba(0, 0, 0, 0.5);
@@ -147,13 +147,13 @@ background-repeat: no-repeat;
     text-decoration: none;
     border-radius: 20px;
     font-family: sans-serif;
-    background-color: rgb(129, 129, 129);
+    background-color: #ff847c;
     color: rgb(255, 255, 255);
     line-height: 3;
 }
 .BackHomeButton:hover {
     border-radius: 5px;
-    color: rgb(225, 225, 225);
+    color:#ff847c;
     transform: transition;
     transition: all 0.5s;
     box-shadow: 0px 20px 25px -10px rgba(0, 0, 0, 0.5);
