@@ -1,0 +1,294 @@
+*{
+    padding: 0;
+}
+html{
+    margin: 0px;
+    padding: 0px;
+}
+body {
+justify-content: center;
+font-family: Arial,Helvetica,sans-serif;
+background: #e84a5f;
+background-size: 100%;
+background-attachment: fixed;
+background-repeat: no-repeat;
+}
+.Post1 {
+    padding: 5px;
+    margin-top: 5%;
+    text-align: center;
+    font-family: sans-serif;
+    justify-content: center;
+    margin-left: 25%;
+    margin-right: 25%;
+    background-color: #3a4f58;
+    box-shadow: 0px 20px 25px -10px rgba(0, 0, 0, 0.5);
+    border-radius: 25px;
+
+}
+.MainDiv {
+    padding-top: 70px;
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.MainDiv ul {
+    list-style: none;
+}
+.MainDiv ul li a{
+   text-decoration: none;
+}
+.ListaPost {
+    margin: 0px;
+    font-size: 40px;
+    font-family: sans-serif;
+}
+.NewPost {
+    text-align: center;
+    transition: all 0.5s;
+    text-decoration: none;
+   font-family: sans-serif; 
+   color: rgb(255, 255, 255);
+   font-size: 15px;
+   background-color: #e84a5f;
+   border-radius: 10px;
+   text-align: center; /* Centra el texto horizontalmente */
+  line-height: 45px; /* Ajusta la altura de línea para centrar verticalmente el texto */
+}
+.NewPost:hover {
+    font-size: 16px;
+    border-radius: 8px;
+    color: rgb(225, 225, 225);
+    transform: transition;
+    transition: all 0.5s;
+    box-shadow: 0px 10px 25px 0px #ff847c;}
+
+.TituloPost {
+    color: white;
+    font-size: 30px;
+}
+.AutorPost{
+    color: white;
+    font-size: 20px;
+}
+.ContenidoPost{
+    color: white;
+    font-size: 20px;
+}
+.DetailsPost {
+    
+    color: rgb(0, 0, 0);
+    background-color: #99b898;
+    color: white;
+    border-radius: 15px;
+}
+.NewPostMain {
+    text-align: center;
+    min-height: 600px;
+}
+.NewPostTittle {
+    font-size: 80px;
+    font-family: sans-serif;
+}
+.FormPost {
+    margin-top: 1%;
+}
+.Form1 input {
+    border-radius: 7px;
+    margin-top: 25px;
+}
+.Form1 textarea {
+    border-radius: 7px;
+    margin-top: 25px;
+}
+.formcomen{
+        align-items: center; /* Centra verticalmente */
+        min-width: 300px; /* Ancho mínimo de 300 píxeles */
+        min-height: 55px; /* Altura mínima de 200 píxeles */
+        padding: 20px; /* Relleno interno para espaciado */
+        background-color: #3a4f58; /* Color de fondo de ejemplo */
+      
+}
+.Form2 {
+    transition: all 0.5s;
+    width: 300px;
+    height: 20px;
+    
+}
+.Form2:hover {
+    height: 50px;
+    transform: transition 1s;
+    transition: all 0.5s;
+}
+.Form3 {
+    width: 300px;
+    height: 75px;
+}
+.Form3:hover {
+    height: 100px;
+    transform: transition 1s;
+    transition: all 0.5s;
+}
+.SavePostButton {
+    border-radius: 7px;
+    margin-top: 20px;
+    background-color: rgb(129, 129, 129);
+    color: white;
+}
+.SavePostButton:hover {
+    border-radius: 5px;
+    color: rgb(225, 225, 225);
+    transform: transition;
+    transition: all 0.5s;
+    box-shadow: 0px 20px 25px -10px rgba(0, 0, 0, 0.5);
+    font-size: 15px;
+}
+.BackHomeButton {
+    text-decoration: none;
+    border-radius: 20px;
+    font-family: sans-serif;
+    background-color: rgb(129, 129, 129);
+    color: rgb(255, 255, 255);
+    line-height: 3;
+}
+.BackHomeButton:hover {
+    border-radius: 5px;
+    color: rgb(225, 225, 225);
+    transform: transition;
+    transition: all 0.5s;
+    box-shadow: 0px 20px 25px -10px rgba(0, 0, 0, 0.5);
+    font-size: 18px;
+}
+.PostDetails1 {
+    background-color: #2a363b;
+    color: #ebebeb;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    width: 75%;
+    margin-left: 10%;
+    border-radius: 20px;
+
+}
+.PostDetailsTittle{
+    font-size: 60px;
+    font-family: sans-serif;
+}
+.PostDetailsPostTittle{
+    font-size: 35px;
+    font-family: sans-serif;
+}
+.PostDetailsAuthor{
+    font-size: 25px;
+    font-family: sans-serif;
+}
+
+.PostDetailsContent {
+    font-size: 25px;
+}
+
+
+.Comentarios {
+    padding-top: 20px;
+    color: #ebebeb;
+    background-color: #2a363b;
+    border-radius: 20px;
+    text-align: center;
+    justify-content: center;
+    width: 75%;
+    margin-left: 10%;
+    margin-top: 30px;
+    min-height: 200px;
+}
+.Comentarios ul {
+    list-style-type: none;
+    padding: 30px;
+}
+.Comentarios ul div{
+    list-style-type: none;
+    border-radius: 20px;
+    background-color: #99b898;
+
+}
+
+.Form4 {
+    border-radius: 25px;
+    transform: transition 0.5s;
+    transition: all 0.5s;
+    height: 25px;
+}
+.Form4:hover {
+    border-radius: 15px;
+    transform: transition 0.5s;
+    transition: all 0.5s;
+     height: 35px;
+     transform: transition;
+     transition: all 0.5s;
+    
+}
+.ComentariosSubmit {
+    list-style: none;
+    font-family: sans-serif;
+    margin-top: 30px;
+}
+.ComentariosSubmited {
+    font-size: 20px;
+    line-height: 2;
+}
+
+.BackToHome1 {
+    text-decoration: none;
+    border-radius: 20px;
+    font-family: sans-serif;
+    background-color: rgb(129, 129, 129);
+    color: rgb(255, 255, 255);
+    margin-top: 20px;
+    line-height: 5;
+}
+.admin{
+    padding-top: 20px;
+    background-color: #2a363b;
+    border-radius: 20px;
+    color :#ebebeb;
+    justify-content: center;
+    width: 75%;
+    margin-left: 10%;
+    margin-top: 30px;
+    min-height: 200px;
+    text-align: center; 
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+.admin form{
+    text-align: center; 
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+.BackToHome1:hover {
+    border-radius: 5px;
+    color: rgb(225, 225, 225);
+    transform: transition;
+    transition: all 0.5s;
+    box-shadow: 0px 20px 25px -10px rgba(0, 0, 0, 0.5);
+    font-size: 18px;
+}
+button.NewPost {
+    display: block; 
+    margin-bottom: 10px;
+  }
+  .MainDiv .head {
+    display: flex;
+    justify-content: space-around;
+    box-shadow: 0px 20px 25px -10px rgba(0, 0, 0, 0.5);
+    background-color: #2a363b;
+    color: white;
+    padding: 10px;
+    margin: 0;
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
