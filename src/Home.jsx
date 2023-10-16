@@ -48,7 +48,7 @@ function Home() {
           </div>
         ))}
       </ul>
-      
+      {<Link to="/admin" className='NewPost'>Ir a admin</Link>}
     </div>
   );
 }
