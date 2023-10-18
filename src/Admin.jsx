@@ -25,19 +25,21 @@ export default function Admin(){
             setAdmin(admt);
             localStorage.setItem('admin', JSON.stringify(admt));
         }
+        if(contraseña==="empanada"){
+            document.body.classList.add("empanada");
+        }
         console.log(admin);
     }
     return(
         <div className="admin"> 
         <form action="" onSubmit={iniciar}>
-            <h3>ingresar contraseña para admin</h3>
-            <input type="text" placeholder="nombre"/>
-            <input type="text" placeholder="contraseña" value={contraseña} onChange={(e)=>setContraseña(e.target.value)}/>
-            <button className="NewPost">iniciar sesion</button>
+            <h3 className="AdminPasswordTittle">Ingresar contraseña para admin</h3>
+            <input type="text" className="InputPasswordAdmin" placeholder="Contraseña" value={contraseña} onChange={(e)=>setContraseña(e.target.value)}/>
+            <button className="AdminButton1">Iniciar sesion</button>
         </form>
-        <button className="NewPost" onClick={cerrar}>cerrar sesion</button>
-        <Link className="NewPost" to="/">volver</Link>
-        {admin && <h1>sos admin capo</h1> } 
+        <button className="AdminButton1" onClick={cerrar}>Cerrar sesion</button>
+        <Link className="AdminButton1" to="/">Volver</Link>
+        {admin && <h1>Sos admin</h1> } 
         </div>
     )
 }
