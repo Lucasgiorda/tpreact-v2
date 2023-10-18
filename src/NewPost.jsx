@@ -47,7 +47,7 @@ function NewPost() {
           <input className='Form2' placeholder='Autor' type="text" value={author} onChange={(e) => setAuthor(e.target.value)} />
         </div>
         <div className='Form1'>
-          <textarea className='Form3' placeholder='Comentario' value={content} onChange={(e) => setContent(e.target.value)} />
+          <textarea className='Form3' placeholder='Contenido' value={content} onChange={(e) => setContent(e.target.value)} />
         </div>
         <button className='SavePostButton' type="submit">Guardar</button>
       </form>
