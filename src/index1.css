@@ -332,6 +332,11 @@ button.NewPost {
     height: 100%;
 }
 
+.trashbutton {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
 
 
 

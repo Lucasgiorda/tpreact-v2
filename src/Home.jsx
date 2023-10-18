@@ -44,7 +44,7 @@ function Home() {
             para la ruta y este valor mas tarde en post es tomado por useParam*/}
             <Link to={`/post/${post.id}`} className='DetailsPost'>Ver Detalles</Link>
           </li>
-          {admin && <button value={post.id}  onClick={borrar}>borrar</button> }
+          {admin && <button value={post.id}  className='trashbutton' onClick={borrar}> <i className='fa-solid fa-trash'></i> </button> }
           </div>
         ))}
       </ul>
